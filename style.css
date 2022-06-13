@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.grid-btn {
+  background-color: hsl(31, 77%, 52%);
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: none;
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+}
+
+.container {
+  width: 65%;
+  margin: 10rem auto;
+}
+
+.section {
+  display: flex;
+}
+
+.section h1 {
+  color: hsl(0, 0%, 95%);
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 700;
+}
+
+.section p {
+  color: hsla(0, 0%, 100%, 0.75);
+  line-height: 1.6;
+  font-size: 15px;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+}
+
+.btn {
+  background: hsl(0, 0%, 95%);
+  padding: 10px 20px;
+  margin-top: 50px;
+  border: solid #fff;
+  border-radius: 20px;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 550;
+}
+
+.btn_1 {
+  color: hsl(31, 77%, 52%);
+}
+
+.btn_2 {
+  color: hsl(184, 100%, 22%);
+}
+
+.btn_3 {
+  color: hsl(179, 100%, 13%);
+}
+
+.btn:hover {
+  cursor: pointer;
+  color: #fff;
+  background: transparent;
+  border: solid;
+}
+
+.section_1,
+.section_2,
+.section_3 {
+  padding: 50px;
+}
+
+.section_1 {
+  background: hsl(31, 77%, 52%);
+  border-radius: 10px 0 0 10px;
+}
+
+.section_2 {
+  background: hsl(184, 100%, 22%);
+}
+
+.section_3 {
+  background: hsl(179, 100%, 13%);
+  border-radius: 0 10px 10px 0;
+}
+
+/* GRID SECTION STYLES */
+#grid-main {
+  background-color: rgb(50, 43, 59);
+}
+
+.grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-areas:
+    "red-grid red-grid red-grid red-grid yellow-grid yellow-grid"
+    "green-grid green-grid green-grid blue-grid blue-grid blue-grid"
+    "green-grid green-grid green-grid blue2-grid blue2-grid blue2-grid";
+}
+
+.grid .red {
+  background-color: rgb(207, 77, 44);
+  height: 200px;
+  grid-area: red-grid;
+}
+
+.grid .yellow {
+  background-color: rgb(255, 174, 0);
+  height: 200px;
+  grid-area: yellow-grid;
+}
+
+.grid .green {
+  background-color: rgb(29, 170, 29);
+  height: 200px;
+  grid-area: green-grid;
+}
+
+.grid .blue {
+  background-color: rgb(89, 89, 223);
+  height: 90px;
+  grid-area: blue-grid;
+}
+
+.grid .blue2 {
+  background-color: rgb(89, 89, 223);
+  height: 90px;
+  grid-area: blue2-grid;
+}
+
+@media (max-width: 900px) {
+  .section {
+    display: block;
+  }
+
+  .section_1 {
+    border-radius: 10px 10px 0 0;
+  }
+
+  .section_3 {
+    border-radius: 0 0 10px 10px;
+  }
+
+  .grid {
+      grid-template-areas: 'red-grid'
+      'yellow-grid'
+      'green-grid'
+      'blue-grid'
+      'blue2-grid';
+  }
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
